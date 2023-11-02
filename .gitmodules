@@ -1,0 +1,9 @@
+[submodule "EtchAPI"]
+	path = Submodules/EtchAPI
+	url = https://github.com/Fleuronic/EtchAPI
+[submodule "EtchDatabase"]
+	path = Submodules/EtchDatabase
+	url = https://github.com/Fleuronic/EtchDatabase
+[submodule "EtchService"]
+	path = Submodules/EtchService
+	url = https://github.com/Fleuronic/EtchService
