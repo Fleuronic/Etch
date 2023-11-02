@@ -1,9 +1,9 @@
-[submodule "EtchAPI"]
+[submodule "Submodules/EtchAPI"]
 	path = Submodules/EtchAPI
 	url = https://github.com/Fleuronic/EtchAPI
-[submodule "EtchDatabase"]
+[submodule "Submodules/EtchDatabase"]
 	path = Submodules/EtchDatabase
 	url = https://github.com/Fleuronic/EtchDatabase
-[submodule "EtchService"]
+[submodule "Submodules/EtchService"]
 	path = Submodules/EtchService
 	url = https://github.com/Fleuronic/EtchService
