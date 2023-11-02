@@ -17,6 +17,7 @@ public struct Team {
 		self.name = name
 		self.creationDate = creationDate
 		self.updateDate = updateDate
+		self.issueCount = issueCount
 		self.isPrivate = isPrivate
 	}
 }
