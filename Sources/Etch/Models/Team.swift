@@ -7,14 +7,13 @@ import struct Foundation.TimeInterval
 @Init public struct Team {
 	let key: String
 	let name: String
-	let icon: String
-	let color: String
-	let description: String
+	let icon: String?
+	let color: String?
+	let description: String?
 	let creationDate: Date
 	let updateDate: Date
-	let archiveDate: Date
+	let archiveDate: Date?
 	let timeZone: TimeZone
-	let issueCount: Int
 	let groupsIssueHistory: Bool
 	let defaultsIssueSortOrderToBottom: Bool
 	let allowsZeroIssueEstimation: Bool
@@ -23,10 +22,9 @@ import struct Foundation.TimeInterval
 	let isPrivate: Bool
 	let isTriageEnabled: Bool
 	let requiresPriorityToLeaveTriage: Bool
-	let joinsNewUsersByDefault: Bool
 	let inviteHash: String
 	let autoArchivePeriod: TimeInterval
-	let autoClosePeriod: TimeInterval
+	let autoClosePeriod: TimeInterval?
 	let defaultIssueEstimate: Int
 	let areCyclesEnabled: Bool
 	let cycleStartDay: Int
