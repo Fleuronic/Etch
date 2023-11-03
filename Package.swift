@@ -17,11 +17,13 @@ let package = Package(
 			]
 		)
 	],
-	dependencies: [],
+	dependencies: [
+		.package(url: "https://github.com/LeonardoCardoso/InitMacro.git", branch: "main")
+	],
 	targets: [
 		.target(
 			name: "Etch",
-			dependencies: []
+			dependencies: ["InitMacro"]
 		)
 	]
 )
