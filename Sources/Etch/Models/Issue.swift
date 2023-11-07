@@ -3,28 +3,28 @@ import struct Foundation.URL
 import struct Foundation.Date
 
 @Init public struct Issue {
-	let title: String
-	let description: String
-	let identifier: String
-	let number: Int
-	let url: URL
-	let estimate: Int?
-	let dueDate: Date?
-	let priority: Int
-	let sortOrder: Int
-	let subIssueSortOrder: Int?
-	let creationDate: Date
-	let updateDate: Date
-	let startDate: Date?
-	let triageDate: Date?
-	let triageStartDate: Date?
-	let completionDate: Date?
-	let cancellationDate: Date?
-	let archiveDate: Date?
-	let autoArchiveDate: Date?
-	let autoCloseDate: Date?
-	let snoozedUntilDate: Date?
-	let branchName: String
-	let customerTicketCount: Int
-	let isTrashed: Bool
+	public let title: String
+	public let description: String
+	public let identifier: String
+	public let number: Int
+	public let url: URL
+	public let estimate: Int?
+	public let dueDate: Date?
+	public let priority: Int
+	public let sortOrder: Int
+	public let subIssueSortOrder: Int?
+	public let creationDate: Date
+	public let updateDate: Date
+	public let startDate: Date?
+	public let triageDate: Date?
+	public let triageStartDate: Date?
+	public let completionDate: Date?
+	public let cancellationDate: Date?
+	public let archiveDate: Date?
+	public let autoArchiveDate: Date?
+	public let autoCloseDate: Date?
+	public let snoozedUntilDate: Date?
+	public let branchName: String
+	public let customerTicketCount: Int
+	public let isTrashed: Bool
 }
