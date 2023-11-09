@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nswift build \\\n    --package-path Submodules\/EtchAPI \\\n\t-Xswiftc \"-target\" \\\n\t-Xswiftc \"arm64-apple-macosx14.0\""
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nrm -rf Submodules\/EtchAPI\/.build\nswift package update --package-path Submodules\/EtchAPI"
+    }
+  },
+  "openLogOnRun" : "fail"
+}

@@ -2,11 +2,11 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nswift build \\\n\t-Xswiftc \"-target\" \\\n    -Xswiftc \"arm64-apple-macosx14.0\"\nrm -rf .build"
+      "script" : "#!\/bin\/sh\nswift build \\\n\t-Xswiftc \"-target\" \\\n    -Xswiftc \"arm64-apple-macosx14.0\""
     },
     "clean" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nswift package update"
+      "script" : "#!\/bin\/sh\nrm -rf .build\nswift package update"
     }
   },
   "openLogOnRun" : "fail"
