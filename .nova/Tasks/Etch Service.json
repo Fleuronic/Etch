@@ -2,11 +2,11 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nswift build \\\n    --package-path Submodules\/EtchService \\\n\t-Xswiftc \"-target\" \\\n\t-Xswiftc \"arm64-apple-macosx14.0\"\nrm -rf Submodules\/EtchService\/.build"
+      "script" : "#!\/bin\/sh\nswift build \\\n    --package-path Submodules\/EtchService \\\n\t-Xswiftc \"-target\" \\\n\t-Xswiftc \"arm64-apple-macosx14.0\""
     },
     "clean" : {
       "enabled" : true,
-      "script" : "#!\/bin\/sh\nswift package update --package-path Submodules\/EtchService"
+      "script" : "#!\/bin\/sh\nrm -rf Submodules\/EtchService\/.build\nswift package update --package-path Submodules\/EtchService"
     }
   },
   "openLogOnRun" : "fail"
